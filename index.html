@@ -9,14 +9,15 @@
       content="AI-style portfolio of Shaleen Singh, product-minded builder and founder of Tirth Sutra."
     />
     <meta name="application-name" content="Shaleen Singh" />
-    <link rel="icon" type="image/png" href="assets/flip-profile.png" />
-    <link rel="apple-touch-icon" href="assets/flip-profile.png" />
+    <link rel="icon" type="image/png" href="assets/site-icon.png" />
+    <link rel="apple-touch-icon" href="assets/site-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preload" as="image" href="assets/main-profile-512.webp" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -121,8 +122,23 @@
         </button>
 
         <div class="avatar-frame">
-          <img class="avatar-main" src="assets/main-profile.jpg" alt="Shaleen Singh" />
-          <img class="avatar-alt" src="assets/flip-profile.png" alt="Shaleen Singh alternate profile" />
+          <img
+            class="avatar-main"
+            src="assets/main-profile-512.webp"
+            alt="Shaleen Singh"
+            width="512"
+            height="512"
+            decoding="async"
+            fetchpriority="high"
+          />
+          <img
+            class="avatar-alt"
+            src="assets/flip-profile-512.webp"
+            alt="Shaleen Singh alternate profile"
+            width="512"
+            height="512"
+            decoding="async"
+          />
         </div>
 
         <p class="role-kicker">Product Builder</p>
@@ -245,7 +261,14 @@
                     rel="noreferrer"
                     aria-label="Open Tirth Sutra Mandir Community website"
                   >
-                    <img src="assets/startup-social-media.jpg" alt="Tirth Sutra Mandir Community logo" />
+                    <img
+                      src="assets/startup-social-media-512.webp"
+                      alt="Tirth Sutra Mandir Community logo"
+                      width="512"
+                      height="512"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </a>
                   <div class="startup-body">
                     <p>01 - Social Media</p>
@@ -282,7 +305,14 @@
                     rel="noreferrer"
                     aria-label="Open Authentic Pilgrimage Agency website"
                   >
-                    <img src="assets/startup-travel-agency.jpg" alt="Tirth Sutra Authentic Pilgrimage Agency logo" />
+                    <img
+                      src="assets/startup-travel-agency-512.webp"
+                      alt="Tirth Sutra Authentic Pilgrimage Agency logo"
+                      width="512"
+                      height="512"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </a>
                   <div class="startup-body">
                     <p>02 - Pilgrimage</p>
@@ -319,7 +349,14 @@
                     rel="noreferrer"
                     aria-label="Open Cultural Heritage Commerce website"
                   >
-                    <img src="assets/startup-ecommerce.jpg" alt="Cultural Heritage Commerce logo" />
+                    <img
+                      src="assets/startup-ecommerce-512.webp"
+                      alt="Cultural Heritage Commerce logo"
+                      width="512"
+                      height="512"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </a>
                   <div class="startup-body">
                     <p>03 - E-commerce</p>
@@ -356,7 +393,14 @@
                     rel="noreferrer"
                     aria-label="Open Sanatan Learning Calendar website"
                   >
-                    <img src="assets/startup-satsang.jpg" alt="Satsang Sutra logo" />
+                    <img
+                      src="assets/startup-satsang-512.webp"
+                      alt="Satsang Sutra logo"
+                      width="512"
+                      height="512"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </a>
                   <div class="startup-body">
                     <p>04 - Learning</p>
@@ -622,7 +666,11 @@
                   <a href="assets/resume.pdf" target="_blank" rel="noreferrer">Open Fullscreen</a>
                 </div>
               </div>
-              <iframe src="assets/resume.pdf#toolbar=1" title="Shaleen Singh resume"></iframe>
+              <iframe
+                src="assets/resume.pdf#toolbar=1"
+                title="Shaleen Singh resume"
+                loading="lazy"
+              ></iframe>
             </div>
           </section>
 
@@ -650,7 +698,14 @@
 
                 <div class="about-image-wrap" aria-label="Shaleen Singh profile image">
                   <span></span>
-                  <img src="AboutMe.png" alt="Shaleen Singh" />
+                  <img
+                    src="assets/about-me-420.webp"
+                    alt="Shaleen Singh"
+                    width="420"
+                    height="420"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
               </div>
 
@@ -766,8 +821,12 @@
 
                 <div class="devotion-mock" aria-label="Tirth Sutra social media logo">
                   <img
-                    src="assets/startup-social-media.jpg"
+                    src="assets/startup-social-media-512.webp"
                     alt="Tirth Sutra social media logo"
+                    width="512"
+                    height="512"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               </div>
