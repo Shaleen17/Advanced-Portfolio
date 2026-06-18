@@ -2440,12 +2440,24 @@ body[data-theme="dark"] .sidebar-backdrop {
 
   .mobile-brand {
     justify-self: start;
+    min-width: 0;
+    border: 0;
+    padding: 0;
     color: var(--ink);
+    background: transparent;
+    cursor: pointer;
+    font-family: inherit;
     font-size: 1.05rem;
     font-weight: 700;
     overflow: hidden;
+    text-align: left;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+
+  .mobile-brand:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 0.25rem;
   }
 
   .mobile-brand span {

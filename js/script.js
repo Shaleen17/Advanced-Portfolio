@@ -2,6 +2,7 @@ const body = document.body;
 const openSidebarButton = document.querySelector(".sidebar-open");
 const closeSidebarButton = document.querySelector(".sidebar-close");
 const sidebarBackdrop = document.querySelector(".sidebar-backdrop");
+const mobileBrandButton = document.querySelector(".mobile-brand");
 const navButtons = document.querySelectorAll("[data-view]");
 const panels = document.querySelectorAll("[data-panel]");
 const promptButtons = document.querySelectorAll("[data-prompt]");
@@ -92,6 +93,7 @@ function selectPrompt(promptName) {
 openSidebarButton?.addEventListener("click", openSidebar);
 closeSidebarButton?.addEventListener("click", closeSidebar);
 sidebarBackdrop?.addEventListener("click", closeSidebar);
+mobileBrandButton?.addEventListener("click", () => showPanel("welcome"));
 themeToggle?.addEventListener("click", () => {
   const nextTheme = body.dataset.theme === "dark" ? "light" : "dark";
   applyTheme(nextTheme);
