@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shaleen Singh</title>
+    <meta
+      name="description"
+      content="AI-style portfolio of Shaleen Singh, product-minded builder and founder of Tirth Sutra."
+    />
+    <meta name="application-name" content="Shaleen Singh" />
+    <link rel="icon" type="image/png" href="assets/flip-profile.png" />
+    <link rel="apple-touch-icon" href="assets/flip-profile.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="icon-menu" viewBox="0 0 24 24">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24">
+        <path d="m6 6 12 12M18 6 6 18" />
+      </symbol>
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+        <path d="M9 18c-4.51 2-5-2-7-2" />
+      </symbol>
+      <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z" />
+        <path d="M2 9h4v12H2z" />
+        <path d="M4 5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <path d="M4 4h16v16H4z" />
+        <path d="m4 7 8 6 8-6" />
+      </symbol>
+      <symbol id="icon-edit" viewBox="0 0 24 24">
+        <path d="M12 20h9" />
+        <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z" />
+      </symbol>
+      <symbol id="icon-code" viewBox="0 0 24 24">
+        <path d="m8 9-4 3 4 3" />
+        <path d="m16 9 4 3-4 3" />
+        <path d="m14 5-4 14" />
+      </symbol>
+      <symbol id="icon-briefcase" viewBox="0 0 24 24">
+        <path d="M10 6V5a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v1" />
+        <path d="M3 7h18v13H3z" />
+        <path d="M3 12h18" />
+        <path d="M10 12v2h4v-2" />
+      </symbol>
+      <symbol id="icon-file" viewBox="0 0 24 24">
+        <path d="M6 3h8l4 4v14H6z" />
+        <path d="M14 3v5h4" />
+        <path d="M9 13h6M9 17h6" />
+      </symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24">
+        <path d="M20 21a8 8 0 0 0-16 0" />
+        <path d="M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" />
+      </symbol>
+      <symbol id="icon-spark" viewBox="0 0 24 24">
+        <path d="M12 3 10 10 3 12l7 2 2 7 2-7 7-2-7-2-2-7Z" />
+        <path d="M18 3v4M20 5h-4" />
+      </symbol>
+      <symbol id="icon-send" viewBox="0 0 24 24">
+        <path d="M12 19V5" />
+        <path d="m5 12 7-7 7 7" />
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M7 17 17 7" />
+        <path d="M8 7h9v9" />
+      </symbol>
+      <symbol id="icon-stack" viewBox="0 0 24 24">
+        <path d="m12 3 8 4-8 4-8-4Z" />
+        <path d="m4 12 8 4 8-4M4 17l8 4 8-4" />
+      </symbol>
+      <symbol id="icon-moon" viewBox="0 0 24 24">
+        <path d="M20.98 15.5A8.5 8.5 0 0 1 8.5 3.02 7 7 0 1 0 20.98 15.5Z" />
+      </symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+      </symbol>
+    </svg>
+
+    <div class="mobile-topbar">
+      <button class="icon-button sidebar-open" type="button" aria-label="Open profile menu">
+        <svg><use href="#icon-menu"></use></svg>
+      </button>
+      <a href="#home" class="mobile-brand">
+        Shaleen Singh
+      </a>
+      <div class="mobile-actions" aria-label="Quick links">
+        <a class="icon-button" href="https://github.com/Shaleen17" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <svg><use href="#icon-github"></use></svg>
+        </a>
+        <a class="icon-button" href="https://www.linkedin.com/in/shaleen17/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <svg><use href="#icon-linkedin"></use></svg>
+        </a>
+        <a class="cv-pill" href="assets/resume.pdf" download>CV</a>
+      </div>
+    </div>
+
+    <div class="sidebar-backdrop"></div>
+
+    <main id="home" class="portfolio-shell">
+      <aside class="profile-sidebar" aria-label="Portfolio navigation">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="theme-icon theme-icon-moon"><use href="#icon-moon"></use></svg>
+          <svg class="theme-icon theme-icon-sun"><use href="#icon-sun"></use></svg>
+        </button>
+
+        <button class="icon-button sidebar-close" type="button" aria-label="Close profile menu">
+          <svg><use href="#icon-close"></use></svg>
+        </button>
+
+        <div class="avatar-frame">
+          <img class="avatar-main" src="assets/main-profile.jpg" alt="Shaleen Singh" />
+          <img class="avatar-alt" src="assets/flip-profile.png" alt="Shaleen Singh alternate profile" />
+        </div>
+
+        <p class="role-kicker">Product Builder</p>
+        <h1>Shaleen Singh</h1>
+        <p class="profile-intro">
+          B.E. IT student, product builder, and founder of Tirth Sutra. I turn
+          startup ideas into practical digital products with clean design,
+          strong research, and real user focus.
+        </p>
+
+        <div class="social-row">
+          <a href="https://github.com/Shaleen17" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <svg><use href="#icon-github"></use></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/shaleen17/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <svg><use href="#icon-linkedin"></use></svg>
+          </a>
+          <a href="mailto:shaleensingh238@gmail.com" aria-label="Email">
+            <svg><use href="#icon-mail"></use></svg>
+          </a>
+        </div>
+
+        <button class="nav-action new-chat" type="button" data-view="welcome">
+          <svg><use href="#icon-edit"></use></svg>
+          <span>New Chat</span>
+        </button>
+
+        <nav class="visual-nav" aria-label="Visual content">
+          <p><span></span>Visual Content</p>
+          <button type="button" class="nav-item" data-view="about">
+            <span><svg><use href="#icon-user"></use></svg></span>
+            About Me
+          </button>
+          <button type="button" class="nav-item is-active" data-view="startups">
+            <span><svg><use href="#icon-spark"></use></svg></span>
+            Working on Startup
+          </button>
+          <button type="button" class="nav-item" data-view="projects">
+            <span><svg><use href="#icon-code"></use></svg></span>
+            Explore Projects
+          </button>
+          <button type="button" class="nav-item" data-view="tech">
+            <span><svg><use href="#icon-stack"></use></svg></span>
+            Tech Stack
+          </button>
+          <button type="button" class="nav-item" data-view="experience">
+            <span><svg><use href="#icon-briefcase"></use></svg></span>
+            Experience
+          </button>
+          <button type="button" class="nav-item" data-view="resume">
+            <span><svg><use href="#icon-file"></use></svg></span>
+            View Resume
+          </button>
+          <button type="button" class="nav-item" data-view="contact">
+            <span><svg><use href="#icon-mail"></use></svg></span>
+            Contact
+          </button>
+        </nav>
+      </aside>
+
+      <section class="chat-stage" aria-label="AI portfolio chat">
+        <div class="chat-scroll">
+          <section class="view-panel welcome-panel" data-panel="welcome">
+            <div class="hero-card">
+              <p class="welcome-title">Hi, welcome to my portfolio.</p>
+              <p class="welcome-accent">
+                No more scrolling through static pages. Have a real
+                conversation about my work.
+              </p>
+              <p class="welcome-copy">
+                Ask it anything, or click a topic below to get started.
+              </p>
+
+              <div class="prompt-grid">
+                <button type="button" class="prompt-chip" data-prompt="about">
+                  <svg><use href="#icon-user"></use></svg>
+                  Tell me about yourself
+                </button>
+                <button type="button" class="prompt-chip" data-prompt="standout">
+                  <svg><use href="#icon-spark"></use></svg>
+                  What makes you stand out?
+                </button>
+                <button type="button" class="prompt-chip" data-prompt="startups">
+                  <svg><use href="#icon-code"></use></svg>
+                  Walk me through your startup work
+                </button>
+                <button type="button" class="prompt-chip" data-prompt="tech">
+                  <svg><use href="#icon-briefcase"></use></svg>
+                  What is in your tech toolkit?
+                </button>
+                <button type="button" class="prompt-chip" data-prompt="contact">
+                  <svg><use href="#icon-mail"></use></svg>
+                  How do I get in touch?
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="view-panel is-visible" data-panel="startups">
+            <div class="user-bubble">Show me what you are building</div>
+            <div class="assistant-heading">
+              <span>Startup portfolio</span>
+              <h2>Four directions under the Tirth Sutra vision.</h2>
+            </div>
+
+            <div class="startup-showcase" aria-label="Startup carousel">
+              <button class="carousel-arrow prev" type="button" aria-label="Previous startup">
+                &lsaquo;
+              </button>
+              <div class="startup-track">
+                <article class="startup-card is-current">
+                  <a
+                    class="startup-logo-panel"
+                    href="https://social-media-coral-tau.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Open Tirth Sutra Mandir Community website"
+                  >
+                    <img src="assets/startup-social-media.jpg" alt="Tirth Sutra Mandir Community logo" />
+                  </a>
+                  <div class="startup-body">
+                    <p>01 - Social Media</p>
+                    <h3>Tirth Sutra Mandir Community</h3>
+                    <span>Verified devotional network for daily faith behavior</span>
+                    <p>
+                      A trust-first devotional network for verified temples,
+                      darshan, satsang, creators, and seva. The first wedge
+                      stays narrow: Hindi-first discovery, anonymous viewing,
+                      and gated interaction after trust is proven.
+                    </p>
+                    <ul class="startup-points">
+                      <li>Verified temples and creators before open social posting.</li>
+                      <li>Anonymous viewing first; follows, comments, and donations later.</li>
+                    </ul>
+                    <div class="tag-row">
+                      <span>Darshan</span>
+                      <span>Satsang</span>
+                      <span>Seva</span>
+                      <span>Community</span>
+                    </div>
+                    <a href="https://social-media-coral-tau.vercel.app/" target="_blank" rel="noreferrer">
+                      Open Website
+                      <svg><use href="#icon-arrow"></use></svg>
+                    </a>
+                  </div>
+                </article>
+
+                <article class="startup-card">
+                  <a
+                    class="startup-logo-panel"
+                    href="https://make-my-yatra.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Open Authentic Pilgrimage Agency website"
+                  >
+                    <img src="assets/startup-travel-agency.jpg" alt="Tirth Sutra Authentic Pilgrimage Agency logo" />
+                  </a>
+                  <div class="startup-body">
+                    <p>02 - Pilgrimage</p>
+                    <h3>Authentic Pilgrimage Agency</h3>
+                    <span>Scripture-grounded yatra planning and execution</span>
+                    <p>
+                      An authentic yatra planning service focused on Kashi,
+                      Prayagraj, and Ayodhya before wider circuits. It
+                      prioritizes transparent itineraries, guide quality, clear
+                      pricing, and reliable fulfillment.
+                    </p>
+                    <ul class="startup-points">
+                      <li>Start with a few high-trust pilgrimage routes.</li>
+                      <li>Publish pricing, policies, itinerary details, and inquiry flow clearly.</li>
+                    </ul>
+                    <div class="tag-row">
+                      <span>Yatra</span>
+                      <span>Kashi</span>
+                      <span>Dharma</span>
+                      <span>Guides</span>
+                    </div>
+                    <a href="https://make-my-yatra.vercel.app/" target="_blank" rel="noreferrer">
+                      Open Website
+                      <svg><use href="#icon-arrow"></use></svg>
+                    </a>
+                  </div>
+                </article>
+
+                <article class="startup-card">
+                  <a
+                    class="startup-logo-panel"
+                    href="https://shaleen17.github.io/Tirth-Sutra/shop/sutra.html"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Open Cultural Heritage Commerce website"
+                  >
+                    <img src="assets/startup-ecommerce.jpg" alt="Cultural Heritage Commerce logo" />
+                  </a>
+                  <div class="startup-body">
+                    <p>03 - E-commerce</p>
+                    <h3>Cultural Heritage Commerce</h3>
+                    <span>Verified artisan storytelling commerce</span>
+                    <p>
+                      A story-led commerce layer for verified artisans and
+                      cultural products. It focuses on maker stories, product
+                      provenance, and manually checked trust signals instead of
+                      becoming a generic catalogue.
+                    </p>
+                    <ul class="startup-points">
+                      <li>Structured maker stories, video proof, and product provenance.</li>
+                      <li>Manually verified claims before seller scale.</li>
+                    </ul>
+                    <div class="tag-row">
+                      <span>Artisans</span>
+                      <span>GI Trust</span>
+                      <span>Mobile</span>
+                      <span>Stories</span>
+                    </div>
+                    <a href="https://shaleen17.github.io/Tirth-Sutra/shop/sutra.html" target="_blank" rel="noreferrer">
+                      Open Website
+                      <svg><use href="#icon-arrow"></use></svg>
+                    </a>
+                  </div>
+                </article>
+
+                <article class="startup-card">
+                  <a
+                    class="startup-logo-panel"
+                    href="https://satsang-sutra.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Open Sanatan Learning Calendar website"
+                  >
+                    <img src="assets/startup-satsang.jpg" alt="Satsang Sutra logo" />
+                  </a>
+                  <div class="startup-body">
+                    <p>04 - Learning</p>
+                    <h3>Sanatan Learning Calendar</h3>
+                    <span>Daily-practice spiritual operating system</span>
+                    <p>
+                      A daily Sanatan practice platform built around calendar
+                      rules, jap reminders, notes, audio, scripture, and
+                      verified teachers. It starts with retention before adding
+                      courses, commerce, and donations.
+                    </p>
+                    <ul class="startup-points">
+                      <li>Calendar logic as a rule engine, not one static table.</li>
+                      <li>Verified teachers and institutions from the beginning.</li>
+                    </ul>
+                    <div class="tag-row">
+                      <span>Calendar</span>
+                      <span>Jap</span>
+                      <span>Audio</span>
+                      <span>Learning</span>
+                    </div>
+                    <a href="https://satsang-sutra.vercel.app/" target="_blank" rel="noreferrer">
+                      Open Website
+                      <svg><use href="#icon-arrow"></use></svg>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <button class="carousel-arrow next" type="button" aria-label="Next startup">
+                &rsaquo;
+              </button>
+            </div>
+
+            <div class="carousel-dots" aria-label="Startup pagination"></div>
+          </section>
+
+          <section class="view-panel" data-panel="projects">
+            <div class="user-bubble">Show me your projects</div>
+            <div class="project-grid">
+              <article class="project-card">
+                <span>Founder Project</span>
+                <h3>Tirth Sutra</h3>
+                <p>
+                  A culture-rooted product ecosystem spanning pilgrimage,
+                  devotional community, learning, commerce, and trust-first
+                  discovery.
+                </p>
+                <div class="tag-row">
+                  <span>Product</span>
+                  <span>Research</span>
+                  <span>Culture</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <span>Product Work</span>
+                <h3>RentZoo</h3>
+                <p>
+                  Product management and technical assistance for a tech-first
+                  rental experience in India's equipment rental market.
+                </p>
+                <div class="tag-row">
+                  <span>Product</span>
+                  <span>Ops</span>
+                  <span>UX</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <span>Portfolio System</span>
+                <h3>AI Portfolio</h3>
+                <p>
+                  A conversational portfolio interface that turns static
+                  profile content into guided, interactive discovery.
+                </p>
+                <div class="tag-row">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="view-panel" data-panel="tech">
+            <div class="user-bubble">What are your technical skills?</div>
+            <div class="assistant-heading tech-heading">
+              <span>Tech Stack</span>
+              <h2>I specialize in a practical range of skills.</h2>
+            </div>
+            <div class="tech-grid">
+              <article class="tech-card">
+                <div class="tech-icon"><svg><use href="#icon-code"></use></svg></div>
+                <h3>Programming</h3>
+                <p>Core logic, scripting, and problem-solving for building reliable product features.</p>
+                <div class="tag-row">
+                  <span>Java</span>
+                  <span>Python</span>
+                  <span>JavaScript</span>
+                </div>
+              </article>
+              <article class="tech-card">
+                <div class="tech-icon"><svg><use href="#icon-stack"></use></svg></div>
+                <h3>Frontend</h3>
+                <p>Clean, responsive interfaces with modern web fundamentals and component thinking.</p>
+                <div class="tag-row">
+                  <span>React.js</span>
+                  <span>JavaScript ES6+</span>
+                  <span>Tailwind CSS</span>
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                </div>
+              </article>
+              <article class="tech-card">
+                <div class="tech-icon"><svg><use href="#icon-briefcase"></use></svg></div>
+                <h3>Backend & Databases</h3>
+                <p>API-first backend flow with database design, testing, and practical data handling.</p>
+                <div class="tag-row">
+                  <span>Node.js</span>
+                  <span>Express.js</span>
+                  <span>REST APIs</span>
+                  <span>Postman</span>
+                  <span>API Design</span>
+                  <span>PostgreSQL</span>
+                  <span>MongoDB</span>
+                  <span>Redis</span>
+                </div>
+              </article>
+              <article class="tech-card tech-card-featured">
+                <div class="tech-icon"><svg><use href="#icon-spark"></use></svg></div>
+                <h3>Entrepreneurial Skills</h3>
+                <p>Product judgment, financial awareness, and clear problem-solving for early-stage ideas.</p>
+                <div class="tag-row">
+                  <span>Product Management</span>
+                  <span>Finance</span>
+                  <span>Problem Solving</span>
+                </div>
+              </article>
+              <article class="tech-card">
+                <div class="tech-icon"><svg><use href="#icon-code"></use></svg></div>
+                <h3>Tools & Deploy</h3>
+                <p>Version control, dashboards, and deployment workflows for shipping projects faster.</p>
+                <div class="tag-row">
+                  <span>Git</span>
+                  <span>GitHub</span>
+                  <span>Vercel</span>
+                  <span>Render</span>
+                  <span>Power BI</span>
+                </div>
+              </article>
+              <article class="tech-card">
+                <div class="tech-icon"><svg><use href="#icon-stack"></use></svg></div>
+                <h3>Cloud</h3>
+                <p>Cloud and container basics for scalable hosting, packaging, and deployment readiness.</p>
+                <div class="tag-row">
+                  <span>AWS</span>
+                  <span>Docker</span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="view-panel" data-panel="experience">
+            <div class="user-bubble">Show me your experience</div>
+            <div class="experience-shell">
+              <div class="assistant-heading experience-heading">
+                <span>Experience</span>
+                <h2>Product, startup, and campus work in motion.</h2>
+              </div>
+
+              <div class="experience-timeline">
+                <article class="experience-item">
+                  <p class="experience-date">August 2025 - Present</p>
+                  <div class="experience-rail" aria-hidden="true"><span></span></div>
+                  <div class="experience-detail">
+                    <span>Product Role</span>
+                    <h3>RentZoo</h3>
+                    <p class="experience-meta">Product Manager and Tech Assistant</p>
+                    <p>
+                      Working on a tech-first equipment rental experience for India,
+                      helping shape product flow, user clarity, and practical
+                      digital systems for heavy machinery booking.
+                    </p>
+                    <div class="tag-row">
+                      <span>Product</span>
+                      <span>Operations</span>
+                      <span>UX Flow</span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="experience-item">
+                  <p class="experience-date">July 2025 - Present</p>
+                  <div class="experience-rail" aria-hidden="true"><span></span></div>
+                  <div class="experience-detail">
+                    <span>Founder</span>
+                    <h3>Tirth Sutra</h3>
+                    <p class="experience-meta">Founder</p>
+                    <p>
+                      Building a culture-rooted product ecosystem around pilgrimage,
+                      devotional community, spiritual learning, and trusted
+                      discovery for Sanatan users.
+                    </p>
+                    <div class="tag-row">
+                      <span>Startup</span>
+                      <span>Research</span>
+                      <span>Culture</span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="experience-item">
+                  <p class="experience-date">July 2025 - Jan 2026</p>
+                  <div class="experience-rail" aria-hidden="true"><span></span></div>
+                  <div class="experience-detail">
+                    <span>Campus</span>
+                    <h3>E-Cell, IIT Bombay</h3>
+                    <p class="experience-meta">Campus Ambassador</p>
+                    <p>
+                      Engaging with entrepreneurship initiatives, outreach, and
+                      student-led startup learning while sharpening communication
+                      and community-building skills.
+                    </p>
+                    <div class="tag-row">
+                      <span>Outreach</span>
+                      <span>Leadership</span>
+                      <span>Entrepreneurship</span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="experience-item">
+                  <p class="experience-date">June 2025 - June 2026</p>
+                  <div class="experience-rail" aria-hidden="true"><span></span></div>
+                  <div class="experience-detail">
+                    <span>Technical Team</span>
+                    <h3>Axios E-Cell TCET Mumbai</h3>
+                    <p class="experience-meta">Technical Team Member</p>
+                    <p>
+                      Contributing to technical and entrepreneurial initiatives with
+                      a focus on practical execution, collaboration, and digital
+                      project support.
+                    </p>
+                    <div class="tag-row">
+                      <span>Technical</span>
+                      <span>Teamwork</span>
+                      <span>Execution</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="view-panel" data-panel="resume">
+            <div class="user-bubble">I would like to see your resume</div>
+            <div class="resume-card">
+              <div class="resume-header">
+                <div>
+                  <h2>Shaleen Singh - Resume</h2>
+                  <p>PDF Document</p>
+                </div>
+                <div class="resume-actions">
+                  <a href="assets/resume.pdf" download>Download</a>
+                  <a href="assets/resume.pdf" target="_blank" rel="noreferrer">Open Fullscreen</a>
+                </div>
+              </div>
+              <iframe src="assets/resume.pdf#toolbar=1" title="Shaleen Singh resume"></iframe>
+            </div>
+          </section>
+
+          <section class="view-panel" data-panel="about">
+            <div class="user-bubble">Tell me about yourself</div>
+            <div class="about-shell">
+              <div class="about-hero">
+                <div class="about-hero-copy">
+                  <span>About Me</span>
+                  <h2>Building with purpose, systems, and startup energy.</h2>
+                  <p>
+                    I am Shaleen Singh, a product-minded Information Technology
+                    student focused on original ideas, practical execution, and
+                    user-friendly digital experiences.
+                  </p>
+                  <div class="about-actions">
+                    <button type="button" class="about-action primary" data-view="contact">
+                      Let us talk
+                    </button>
+                    <a class="about-action secondary" href="assets/resume.pdf" download>
+                      Download CV
+                    </a>
+                  </div>
+                </div>
+
+                <div class="about-image-wrap" aria-label="Shaleen Singh profile image">
+                  <span></span>
+                  <img src="AboutMe.png" alt="Shaleen Singh" />
+                </div>
+              </div>
+
+              <div class="about-story">
+                <div class="about-story-header">
+                  <span>My Journey</span>
+                  <h3>Curious about products, serious about execution.</h3>
+                  <p>
+                    A single story of how I think, build, research, and grow as
+                    a product-focused technology student.
+                  </p>
+                </div>
+
+                <article class="about-narrative">
+                  <p class="about-lead">
+                    I am a B.E. Information Technology student at the University
+                    of Mumbai, passionate about building meaningful digital
+                    products from scratch. I am the Founder of
+                    <strong>Tirth Sutra</strong>, a platform focused on creating
+                    authentic and spiritually rooted experiences.
+                  </p>
+                  <p>
+                    I have also gained startup experience as a Product Manager
+                    and Tech Assistant at <strong>RentZoo</strong>, a startup
+                    founded by IIT Bombay students that is building digital
+                    rental systems for heavy machinery booking. This experience
+                    helped me understand product thinking, user problems,
+                    startup execution, and the importance of building practical
+                    solutions.
+                  </p>
+                  <p>
+                    My main interest lies in <strong>product development,
+                    startup research, system design, and user experience</strong>.
+                    I enjoy exploring new startup ideas, researching existing
+                    markets, and building products that solve real problems at
+                    scale. I am especially interested in creating authentic,
+                    original, and impactful solutions that can contribute
+                    meaningfully to the country.
+                  </p>
+                  <p>
+                    From a technical perspective, I am interested in designing
+                    <strong>large-scale systems</strong> that can handle a high
+                    number of users efficiently. I also care deeply about
+                    creating clean, simple, and user-friendly interfaces that
+                    provide the best possible user experience.
+                  </p>
+                  <p>
+                    My long-term goal is to work on impactful products,
+                    contribute to strong startup ecosystems, and grow into roles
+                    focused on <strong>Product Building, System Design, and
+                    Startup Innovation</strong>.
+                  </p>
+                </article>
+
+                <div class="about-focus-row" aria-label="Current focus areas">
+                  <span>Product Building</span>
+                  <span>System Design</span>
+                  <span>Startup Innovation</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="view-panel" data-panel="standout">
+            <div class="user-bubble">What makes you stand out?</div>
+            <div class="answer-card">
+              <h2>I build with both code and business clarity.</h2>
+              <p>
+                What makes me stand out is that I do not look at technology as
+                only code. I think about the business side, the user problem,
+                the market, and the long-term product value before building.
+                I can understand technical execution, but I also ask why the
+                product should exist, who it serves, how it can grow, and what
+                makes it useful in the real world.
+              </p>
+              <p>
+                This helps me build with a founder mindset. Whether I am
+                working on Tirth Sutra, RentZoo, or a new idea, I try to connect
+                product thinking, system design, user experience, and business
+                practicality. My goal is not just to create something that
+                works, but something that is meaningful, scalable, and valuable.
+              </p>
+            </div>
+          </section>
+
+          <section class="view-panel" data-panel="contact">
+            <div class="user-bubble">How do I get in touch?</div>
+            <div class="contact-shell">
+              <aside class="contact-intro" aria-label="Contact details">
+                <span>Contact Me</span>
+                <h2>Let us talk about ideas, products, and opportunities.</h2>
+                <p>
+                  Send a message for startup conversations, collaboration,
+                  internship opportunities, or product work. I will receive it
+                  directly on email.
+                </p>
+                <div class="contact-methods">
+                  <a href="mailto:shaleensingh238@gmail.com" class="contact-method">
+                    <svg><use href="#icon-mail"></use></svg>
+                    <span>shaleensingh238@gmail.com</span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/shaleen17/" target="_blank" rel="noreferrer" class="contact-method">
+                    <svg><use href="#icon-linkedin"></use></svg>
+                    <span>LinkedIn Profile</span>
+                  </a>
+                  <a href="https://github.com/Shaleen17" target="_blank" rel="noreferrer" class="contact-method">
+                    <svg><use href="#icon-github"></use></svg>
+                    <span>GitHub Projects</span>
+                  </a>
+                </div>
+              </aside>
+
+              <div class="contact-form-card">
+                <div class="contact-form-heading">
+                  <span>Message</span>
+                  <h3>Send me a note</h3>
+                </div>
+                <form
+                  class="contact-form"
+                  action="https://formsubmit.co/ajax/shaleensingh238@gmail.com"
+                  method="POST"
+                >
+                  <input type="hidden" name="_subject" value="New portfolio message for Shaleen Singh" />
+                  <input type="hidden" name="_template" value="table" />
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input type="text" name="_honey" class="contact-hidden" tabindex="-1" autocomplete="off" />
+
+                  <div class="contact-fields">
+                    <label class="contact-field">
+                      <span>Full Name</span>
+                      <input type="text" name="name" autocomplete="name" required />
+                    </label>
+                    <label class="contact-field">
+                      <span>Company</span>
+                      <input type="text" name="company" autocomplete="organization" />
+                    </label>
+                    <label class="contact-field">
+                      <span>Email</span>
+                      <input type="email" name="email" autocomplete="email" placeholder="your@email.com" required />
+                    </label>
+                    <label class="contact-field">
+                      <span>Phone Number</span>
+                      <input type="tel" name="phone" autocomplete="tel" placeholder="+91 00000 00000" />
+                    </label>
+                    <label class="contact-field contact-field-full">
+                      <span>Subject</span>
+                      <input type="text" name="subject" placeholder="Project, collaboration, opportunity..." />
+                    </label>
+                    <label class="contact-field contact-field-full">
+                      <span>Your Message</span>
+                      <textarea name="message" rows="5" placeholder="Type your message here" required></textarea>
+                    </label>
+                  </div>
+
+                  <div class="contact-submit-row">
+                    <button class="contact-submit" type="submit">
+                      <span>Send Message</span>
+                      <svg><use href="#icon-send"></use></svg>
+                    </button>
+                    <p class="contact-form-status" aria-live="polite"></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <form class="composer" aria-label="Message composer">
+          <textarea
+            rows="1"
+            placeholder="Ask me anything or type / for commands..."
+            aria-label="Ask portfolio assistant"
+          ></textarea>
+          <button type="submit" aria-label="Send message" disabled>
+            <svg><use href="#icon-send"></use></svg>
+          </button>
+        </form>
+        <p class="footer-line">Builds product ideas, then keeps refining the flow.</p>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
