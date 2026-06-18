@@ -5,6 +5,7 @@ const sidebarBackdrop = document.querySelector(".sidebar-backdrop");
 const navButtons = document.querySelectorAll("[data-view]");
 const panels = document.querySelectorAll("[data-panel]");
 const promptButtons = document.querySelectorAll("[data-prompt]");
+const chatScroll = document.querySelector(".chat-scroll");
 const composer = document.querySelector(".composer");
 const composerInput = composer?.querySelector("textarea");
 const composerButton = composer?.querySelector("button");
@@ -26,6 +27,7 @@ const promptViews = {
   startups: "startups",
   tech: "tech",
   contact: "contact",
+  proud: "proud",
 };
 
 function getSavedTheme() {
@@ -71,6 +73,8 @@ function showPanel(panelName) {
   navButtons.forEach((button) => {
     button.classList.toggle("is-active", button.dataset.view === panelName);
   });
+
+  if (chatScroll) chatScroll.scrollTop = 0;
 
   if (panelName === "startups") {
     startStartupMotion();
@@ -195,6 +199,7 @@ function inferPanelFromMessage(message) {
   if (text.includes("resume") || text.includes("cv")) return "resume";
   if (text.includes("experience") || text.includes("work history") || text.includes("rentzoo")) return "experience";
   if (text.includes("tech") || text.includes("skill") || text.includes("stack")) return "tech";
+  if (text.includes("proud") || text.includes("favorite") || text.includes("favourite")) return "proud";
   if (text.includes("project")) return "projects";
   if (text.includes("startup") || text.includes("tirth") || text.includes("build")) return "startups";
   if (text.includes("contact") || text.includes("email") || text.includes("linkedin")) return "contact";

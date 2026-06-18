@@ -1359,6 +1359,193 @@ h3 {
   font-size: 1.05rem;
 }
 
+[data-panel="proud"] {
+  width: min(100%, 68rem);
+}
+
+.proud-project-shell {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(248, 240, 237, 0.72)),
+    var(--surface);
+  box-shadow: 0 18px 48px rgba(74, 46, 42, 0.1);
+}
+
+.proud-project-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(16rem, 0.85fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: center;
+  padding: clamp(1.35rem, 3.6vw, 2.6rem);
+  color: #fff;
+  background:
+    linear-gradient(135deg, rgba(74, 46, 42, 0.98), rgba(46, 27, 24, 0.96)),
+    var(--primary);
+}
+
+.proud-project-copy {
+  min-width: 0;
+}
+
+.proud-project-copy > span,
+.proud-project-story span,
+.proud-tech-heading span {
+  color: rgba(255, 248, 241, 0.78);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.proud-project-copy h2 {
+  max-width: 38rem;
+  margin: 0.35rem 0 0;
+  color: #fff;
+  font-size: clamp(1.9rem, 4.4vw, 3.45rem);
+  line-height: 1;
+}
+
+.proud-project-copy p {
+  max-width: 42rem;
+  margin: 1rem 0 0;
+  color: rgba(255, 255, 255, 0.84);
+  line-height: 1.6;
+}
+
+.proud-slogan {
+  border-left: 4px solid rgba(255, 248, 241, 0.72);
+  padding: 0.85rem 1rem;
+  border-radius: 0.85rem;
+  background: rgba(255, 248, 241, 0.09);
+  color: #fff !important;
+  font-weight: 700;
+}
+
+.proud-project-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  border: 1px solid rgba(255, 248, 241, 0.24);
+  border-radius: 999px;
+  padding: 0.72rem 1.05rem;
+  color: var(--primary-dark);
+  background: #fff8f1;
+  font-weight: 700;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.16);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.proud-project-button:hover {
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.22);
+  transform: translateY(-2px);
+}
+
+.proud-project-button svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.devotion-mock {
+  display: grid;
+  place-items: center;
+  min-height: 23rem;
+  border: 1px solid rgba(255, 248, 241, 0.2);
+  border-radius: 1.35rem;
+  padding: clamp(1.35rem, 3vw, 2.1rem);
+  background:
+    linear-gradient(180deg, rgba(255, 248, 241, 0.16), rgba(255, 248, 241, 0.06)),
+    rgba(255, 248, 241, 0.08);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 22px 48px rgba(0, 0, 0, 0.22);
+}
+
+.devotion-mock img {
+  width: min(74%, 14rem);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 1px solid rgba(255, 248, 241, 0.28);
+  border-radius: 1rem;
+  background: #f9ecd8;
+  box-shadow:
+    0 18px 42px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.proud-project-story {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  padding: clamp(1rem, 3vw, 1.45rem);
+}
+
+.proud-project-story article,
+.proud-tech-grid article {
+  border: 1px solid rgba(74, 46, 42, 0.12);
+  border-radius: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 12px 32px rgba(74, 46, 42, 0.06);
+}
+
+.proud-project-story span,
+.proud-tech-heading span {
+  color: var(--primary-mid);
+}
+
+.proud-project-story p {
+  margin: 0.48rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.58;
+}
+
+.proud-tech {
+  padding: 0 clamp(1rem, 3vw, 1.45rem) clamp(1rem, 3vw, 1.45rem);
+}
+
+.proud-tech-heading {
+  max-width: 48rem;
+  margin-bottom: 0.9rem;
+}
+
+.proud-tech-heading h3 {
+  margin: 0.25rem 0 0;
+  color: var(--maroon);
+  font-size: clamp(1.45rem, 3vw, 2.2rem);
+  line-height: 1.12;
+}
+
+.proud-tech-heading p {
+  margin: 0.55rem 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.proud-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.proud-tech-grid h4 {
+  margin: 0;
+  color: var(--maroon);
+  font-size: 1rem;
+}
+
+.proud-tech-grid p {
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.52;
+}
+
 [data-panel="about"] {
   width: min(100%, 66rem);
 }
@@ -2000,12 +2187,52 @@ body[data-theme="dark"] .contact-card,
 body[data-theme="dark"] .about-shell,
 body[data-theme="dark"] .contact-shell,
 body[data-theme="dark"] .contact-form-card,
+body[data-theme="dark"] .proud-project-shell,
+body[data-theme="dark"] .proud-project-story article,
+body[data-theme="dark"] .proud-tech-grid article,
 body[data-theme="dark"] .startup-card {
   border-color: var(--line-strong);
   background:
     linear-gradient(135deg, rgba(45, 33, 30, 0.96), rgba(31, 22, 20, 0.9)),
     rgba(33, 24, 22, 0.94);
   box-shadow: var(--shadow);
+}
+
+body[data-theme="dark"] .proud-project-hero {
+  background:
+    linear-gradient(135deg, rgba(45, 33, 30, 0.98), rgba(18, 13, 12, 0.98)),
+    var(--surface);
+}
+
+body[data-theme="dark"] .devotion-mock {
+  border-color: rgba(251, 238, 219, 0.18);
+  background:
+    linear-gradient(180deg, rgba(251, 238, 219, 0.1), rgba(251, 238, 219, 0.04)),
+    rgba(251, 238, 219, 0.06);
+}
+
+body[data-theme="dark"] .devotion-mock img {
+  border-color: rgba(251, 238, 219, 0.24);
+}
+
+body[data-theme="dark"] .proud-project-button {
+  border-color: rgba(251, 238, 219, 0.22);
+  color: #ffffff;
+  background: rgba(251, 238, 219, 0.12);
+}
+
+body[data-theme="dark"] .proud-project-copy > span,
+body[data-theme="dark"] .proud-project-copy h2,
+body[data-theme="dark"] .proud-project-copy p,
+body[data-theme="dark"] .proud-slogan,
+body[data-theme="dark"] .proud-project-story span,
+body[data-theme="dark"] .proud-project-story p,
+body[data-theme="dark"] .proud-tech-heading span,
+body[data-theme="dark"] .proud-tech-heading h3,
+body[data-theme="dark"] .proud-tech-heading p,
+body[data-theme="dark"] .proud-tech-grid h4,
+body[data-theme="dark"] .proud-tech-grid p {
+  color: #ffffff;
 }
 
 body[data-theme="dark"] .about-story {
@@ -2310,6 +2537,15 @@ body[data-theme="dark"] .sidebar-backdrop {
   [data-panel="tech"] .tech-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .proud-project-hero,
+  .proud-project-story {
+    grid-template-columns: 1fr;
+  }
+
+  .proud-tech-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 720px) {
@@ -2386,6 +2622,57 @@ body[data-theme="dark"] .sidebar-backdrop {
 
   .about-shell {
     border-radius: 1rem;
+  }
+
+  .proud-project-shell {
+    border-radius: 1rem;
+  }
+
+  .proud-project-hero {
+    gap: 1rem;
+    padding: 1.1rem;
+  }
+
+  .proud-project-copy h2 {
+    font-size: clamp(1.95rem, 10vw, 2.8rem);
+  }
+
+  .proud-project-copy p {
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
+  .proud-slogan {
+    padding: 0.75rem 0.82rem;
+  }
+
+  .proud-project-button {
+    width: 100%;
+    justify-content: center;
+    padding: 0.7rem 0.9rem;
+  }
+
+  .devotion-mock {
+    min-height: 16.5rem;
+    border-radius: 1rem;
+  }
+
+  .devotion-mock img {
+    width: min(68%, 11.5rem);
+    border-radius: 0.85rem;
+  }
+
+  .proud-project-story {
+    gap: 0.7rem;
+    padding: 0.85rem;
+  }
+
+  .proud-tech {
+    padding: 0 0.85rem 0.85rem;
+  }
+
+  .proud-tech-grid {
+    grid-template-columns: 1fr;
   }
 
   .about-hero {

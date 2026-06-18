@@ -217,6 +217,10 @@
                   <svg><use href="#icon-mail"></use></svg>
                   How do I get in touch?
                 </button>
+                <button type="button" class="prompt-chip" data-prompt="proud">
+                  <svg><use href="#icon-spark"></use></svg>
+                  What projects are you most proud of?
+                </button>
               </div>
             </div>
           </section>
@@ -713,22 +717,155 @@
           <section class="view-panel" data-panel="standout">
             <div class="user-bubble">What makes you stand out?</div>
             <div class="answer-card">
-              <h2>I build with both code and business clarity.</h2>
+              <h2>I bridge technology, product, and business.</h2>
               <p>
-                What makes me stand out is that I do not look at technology as
-                only code. I think about the business side, the user problem,
-                the market, and the long-term product value before building.
-                I can understand technical execution, but I also ask why the
-                product should exist, who it serves, how it can grow, and what
-                makes it useful in the real world.
+                What makes me stand out is that I do not build like a pure
+                coder. I build like a product thinker. I understand the
+                technical side, but I also think about the business aspect:
+                what problem is worth solving, who will use the product, what
+                value it creates, and how it can grow in the real world.
               </p>
               <p>
-                This helps me build with a founder mindset. Whether I am
-                working on Tirth Sutra, RentZoo, or a new idea, I try to connect
-                product thinking, system design, user experience, and business
-                practicality. My goal is not just to create something that
-                works, but something that is meaningful, scalable, and valuable.
+                This helps me look at every idea from multiple angles: system
+                design, user experience, market need, execution, and long-term
+                impact. My goal is not just to make something that works, but
+                to build meaningful products that are useful, scalable,
+                practical, and strong enough to become real businesses.
               </p>
+            </div>
+          </section>
+
+          <section class="view-panel" data-panel="proud">
+            <div class="user-bubble">What projects are you most proud of?</div>
+            <div class="proud-project-shell">
+              <div class="proud-project-hero">
+                <div class="proud-project-copy">
+                  <span>Featured Project</span>
+                  <h2>Social Media Platform For Devotee</h2>
+                  <p>
+                    The project I am most proud of is a spiritual social media
+                    platform for devotees in India. It is built around one
+                    clear problem: people want devotional content and authentic
+                    satsang, but most digital platforms mix spirituality with
+                    noise, misinformation, ads, and unrelated distractions.
+                  </p>
+                  <p class="proud-slogan">
+                    The feed of Instagram, the videos of YouTube, the connection
+                    of WhatsApp - zero distractions, 100% devotion.
+                  </p>
+                  <a
+                    class="proud-project-button"
+                    href="https://social-media-coral-tau.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Open Website
+                    <svg><use href="#icon-arrow"></use></svg>
+                  </a>
+                </div>
+
+                <div class="devotion-mock" aria-label="Tirth Sutra social media logo">
+                  <img
+                    src="assets/startup-social-media.jpg"
+                    alt="Tirth Sutra social media logo"
+                  />
+                </div>
+              </div>
+
+              <div class="proud-project-story">
+                <article>
+                  <span>The Problem</span>
+                  <p>
+                    Spiritual content is fragmented across Instagram, YouTube,
+                    WhatsApp, and search results. A devotee may begin with bhav,
+                    but the same platform quickly pulls attention toward
+                    entertainment, trends, and unrelated recommendations.
+                  </p>
+                </article>
+                <article>
+                  <span>The Product</span>
+                  <p>
+                    Tirth Sutra Mandir Community is designed as a trusted,
+                    distraction-free space for darshan, satsang, videos, temple
+                    discovery, devotional creators, and community connection.
+                    The goal is not endless scrolling. The goal is focused,
+                    authentic spiritual discovery.
+                  </p>
+                </article>
+                <article>
+                  <span>The Vision</span>
+                  <p>
+                    I see it as a Sattvic digital environment where technology
+                    protects attention instead of exploiting it. It combines
+                    product thinking, community design, real-time interaction,
+                    and spiritual authenticity into one platform.
+                  </p>
+                </article>
+              </div>
+
+              <div class="proud-tech">
+                <div class="proud-tech-heading">
+                  <span>Tech Stack</span>
+                  <h3>Built as a full product, not only a UI.</h3>
+                  <p>
+                    The platform uses a vanilla HTML, CSS, and JavaScript PWA on
+                    the frontend, connected to a Node.js and Express backend
+                    with real-time community features, media storage, payments,
+                    security, and deployment-ready infrastructure.
+                  </p>
+                </div>
+
+                <div class="proud-tech-grid">
+                  <article>
+                    <h4>Frontend & PWA</h4>
+                    <p>
+                      HTML, CSS, Vanilla JavaScript, Fetch API, Socket.IO client,
+                      Web Manifest, service worker, Google Fonts, Google
+                      Analytics, and Razorpay Checkout.
+                    </p>
+                  </article>
+                  <article>
+                    <h4>Backend & APIs</h4>
+                    <p>
+                      Node.js, Express.js, REST APIs, Node HTTP server,
+                      Socket.IO, custom route modules, cron jobs, monitoring,
+                      and API protection middleware.
+                    </p>
+                  </article>
+                  <article>
+                    <h4>Database & Storage</h4>
+                    <p>
+                      MongoDB Atlas, Mongoose, Cloudinary media storage, Redis
+                      cache, Redis real-time adapter, and browser session hints
+                      through localStorage.
+                    </p>
+                  </article>
+                  <article>
+                    <h4>Auth & Security</h4>
+                    <p>
+                      JWT, httpOnly auth cookies, CSRF protection, bcryptjs,
+                      Google OAuth, CORS, custom security headers, rate limits,
+                      and environment-based secrets.
+                    </p>
+                  </article>
+                  <article>
+                    <h4>Product Services</h4>
+                    <p>
+                      Razorpay donations, Daily.co calls, Brevo and SMTP email,
+                      Web Push notifications, MyMemory translation, upload
+                      handling with Multer, and support workflows.
+                    </p>
+                  </article>
+                  <article>
+                    <h4>Deployment</h4>
+                    <p>
+                      Vercel for the frontend PWA, Render for the backend,
+                      MongoDB Atlas for data, Cloudinary for media, Redis for
+                      scale, and managed environment variables.
+                    </p>
+                  </article>
+                </div>
+              </div>
             </div>
           </section>
 
